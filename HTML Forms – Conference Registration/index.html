@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+          
+            <label for="name">name</label><input required type="text" id="name" name="name" minlength="2">
+          <br>
+            <label for="email">email</label><input type="email" required id="email" name="email">
+           <br>
+            <label for="tel">tel</label><input type="tel" id="tel" name="tel">
+        </fieldset>
+        <fieldset>
+            <legend>Ticket & Workshops</legend>
+<label for="ticket">ticket</label>
+    <select name="ticket" id="ticket" required>
+        <option value="Standard">Standard</option>
+        <option value="VIP">VIP</option>
+        <option value="Standard">Standard</option>
+    </select>
+    <br>
+    <label for="WebPerformance ">Web Performance</label>
+    <input type="checkbox" id="WebPerformance" name="Workshops">
+    <label for="Accessibility ">Accessibility</label>
+    <input type="checkbox" id="Accessibility" name="Workshops">
+    <label for="Testing ">Testing</label>
+    <input type="checkbox" id="Testing" name="Workshops">
+    <br>
+    <label for="None">None</label>
+    <input type="radio" id="None" name="Diet ">
+    <label for="">Vegan</label>
+    <input type="radio" id="Vegan" name="Diet ">
+    <label for="Kosher">Kosher</label>
+    <input type="radio" id="Kosher" name="Diet ">
+    <label for="Halal">Halal</label>
+    <input type="radio" id="Halal" name="Diet ">
+
+        </fieldset>
+        <fieldset>
+            <legend>Payment Details</legend>
+            <label for="cardNumber">card number</label>
+            <input type="text" minlength="13" maxlength="19" id="cardNumber" name="cardNumber" required>
+            <label for="ExpiryDate">Expiry date</label>
+            <input type="month" id="ExpiryDate" name="ExpiryDate">
+            <label for="cvv">cvv</label>
+            <input type="password" minlength="3" maxlength="4" id="cvv" name="cvv" required>
+        </fieldset>
+       
+        
+       <button type="submit">send</button>
+    </form>
+</body>
+</html>
